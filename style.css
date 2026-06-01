@@ -109,12 +109,12 @@ h1 {
   background: white;
 }
 
-.photo-card {
-  background: var(--card);
-  padding: 18px;
-  border-radius: 28px;
-  box-shadow: 0 20px 60px rgba(31, 41, 51, 0.12);
-  text-align: center;
+.photo-card img {
+    width: 280px;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
 }
 
 .photo-card img {
