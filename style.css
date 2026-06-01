@@ -10,28 +10,28 @@ html {
 
 body {
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  color: #f3f4f6;
-  background: #080b10;
+  color: #1d1d1f;
+  background: #f8f6f2;
   line-height: 1.7;
   overflow-x: hidden;
 }
 
 a {
-  color: #6bbcff;
+  color: #245c7a;
 }
 
 .network-background {
   position: fixed;
   inset: 0;
   z-index: -1;
-  opacity: 0.28;
+  opacity: 0.22;
   background-image:
-    radial-gradient(circle at 10% 20%, #6bbcff 0 2px, transparent 3px),
-    radial-gradient(circle at 35% 70%, #6bbcff 0 2px, transparent 3px),
-    radial-gradient(circle at 70% 30%, #6bbcff 0 2px, transparent 3px),
-    radial-gradient(circle at 90% 75%, #6bbcff 0 2px, transparent 3px),
-    linear-gradient(35deg, transparent 48%, rgba(107, 188, 255, 0.18) 49%, transparent 51%),
-    linear-gradient(120deg, transparent 48%, rgba(107, 188, 255, 0.12) 49%, transparent 51%);
+    radial-gradient(circle at 10% 20%, #245c7a 0 2px, transparent 3px),
+    radial-gradient(circle at 35% 70%, #245c7a 0 2px, transparent 3px),
+    radial-gradient(circle at 70% 30%, #245c7a 0 2px, transparent 3px),
+    radial-gradient(circle at 90% 75%, #245c7a 0 2px, transparent 3px),
+    linear-gradient(35deg, transparent 48%, rgba(36, 92, 122, 0.18) 49%, transparent 51%),
+    linear-gradient(120deg, transparent 48%, rgba(36, 92, 122, 0.12) 49%, transparent 51%);
   background-size: 260px 260px;
   animation: networkMove 18s ease-in-out infinite alternate;
 }
@@ -58,7 +58,6 @@ a {
   font-weight: 750;
   font-size: 1.25rem;
   letter-spacing: -0.02em;
-  color: #ffffff;
 }
 
 .nav-links {
@@ -69,13 +68,13 @@ a {
 
 .nav-links a {
   text-decoration: none;
-  color: #c8d1dc;
+  color: #303030;
   font-size: 0.95rem;
   font-weight: 500;
 }
 
 .nav-links a:hover {
-  color: #6bbcff;
+  color: #245c7a;
 }
 
 .hero {
@@ -93,7 +92,7 @@ a {
 }
 
 .eyebrow {
-  color: #6bbcff;
+  color: #245c7a;
   font-weight: 700;
   margin-bottom: 18px;
   letter-spacing: 0.02em;
@@ -104,12 +103,11 @@ h1 {
   line-height: 0.95;
   letter-spacing: -0.07em;
   margin-bottom: 28px;
-  color: #ffffff;
 }
 
 .subtitle {
   font-size: 1.2rem;
-  color: #c7ced8;
+  color: #4a4a4a;
   max-width: 720px;
 }
 
@@ -130,24 +128,24 @@ h1 {
 }
 
 .btn.primary {
-  background: #6bbcff;
-  color: #07111c;
+  background: #245c7a;
+  color: white;
 }
 
 .btn.primary:hover {
-  background: #9bd2ff;
+  background: #193f55;
   transform: translateY(-2px);
 }
 
 .btn.secondary {
-  background: rgba(255, 255, 255, 0.06);
-  color: #f3f4f6;
-  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.75);
+  color: #1d1d1f;
+  border: 1px solid rgba(0, 0, 0, 0.12);
 }
 
 .btn.secondary:hover {
   transform: translateY(-2px);
-  border-color: #6bbcff;
+  border-color: #245c7a;
 }
 
 .photo-card {
@@ -160,10 +158,8 @@ h1 {
   height: 230px;
   object-fit: cover;
   border-radius: 50%;
-  border: 7px solid rgba(255, 255, 255, 0.9);
-  box-shadow:
-    0 0 0 1px rgba(107, 188, 255, 0.3),
-    0 18px 45px rgba(0, 0, 0, 0.45);
+  border: 7px solid white;
+  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.16);
 }
 
 .section {
@@ -176,12 +172,11 @@ h1 {
   font-size: 2.2rem;
   letter-spacing: -0.04em;
   margin-bottom: 26px;
-  color: #ffffff;
 }
 
 .section p {
   margin-bottom: 16px;
-  color: #c7ced8;
+  color: #3d3d3d;
 }
 
 .section-intro {
@@ -209,33 +204,21 @@ h1 {
 .blog-item,
 .personal-card,
 .thesis-card {
-  background: rgba(255, 255, 255, 0.055);
-  backdrop-filter: blur(12px);
+  background: rgba(255, 255, 255, 0.82);
+  backdrop-filter: blur(10px);
   border-radius: 22px;
   padding: 24px;
-  box-shadow: 0 18px 45px rgba(0, 0, 0, 0.28);
-  border: 1px solid rgba(255, 255, 255, 0.11);
-}
-
-.card:hover,
-.publication:hover,
-.story-card:hover,
-.blog-item:hover,
-.personal-card:hover,
-.thesis-card:hover {
-  border-color: rgba(107, 188, 255, 0.35);
-  transform: translateY(-2px);
-  transition: 0.2s ease;
+  box-shadow: 0 12px 34px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.7);
 }
 
 .card h3,
 .story-card h3,
 .blog-item h3,
 .personal-card h3,
-.thesis-card h3,
-.publication h3 {
+.thesis-card h3 {
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #1d1d1f;
 }
 
 .thesis-card {
@@ -247,7 +230,7 @@ h1 {
   max-width: 230px;
   border-radius: 14px;
   margin-bottom: 20px;
-  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.45);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.18);
   transition: 0.2s ease;
 }
 
@@ -265,7 +248,7 @@ h1 {
 }
 
 .publication a {
-  color: #9bd2ff;
+  color: #245c7a;
   text-decoration: none;
 }
 
@@ -289,13 +272,12 @@ h1 {
   object-fit: cover;
   border-radius: 16px;
   margin-bottom: 18px;
-  background: #111827;
+  background: #e8e4dc;
 }
 
 .story-card a {
   font-weight: 700;
   text-decoration: none;
-  color: #9bd2ff;
 }
 
 .story-card a:hover {
@@ -312,7 +294,7 @@ h1 {
   margin-top: 8px;
   font-size: 0.85rem;
   font-weight: 700;
-  color: #f2b279;
+  color: #8a5a44;
 }
 
 .personal-grid {
@@ -324,7 +306,6 @@ h1 {
 .contact a {
   text-decoration: none;
   font-weight: 700;
-  color: #9bd2ff;
 }
 
 .contact a:hover {
@@ -334,7 +315,7 @@ h1 {
 footer {
   text-align: center;
   padding: 55px 24px;
-  color: #8d99a8;
+  color: #777;
 }
 
 @media (max-width: 900px) {
